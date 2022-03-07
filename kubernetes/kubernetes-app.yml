@@ -1,0 +1,18 @@
+
+# 
+# K8s nginx compose
+# 
+
+version: '1.0'
+
+# 
+# TYPES
+# 
+
+types:
+
+  KubernetesApp:
+    name: KubernetesApp
+    version: 1
+    property:
+      name: string

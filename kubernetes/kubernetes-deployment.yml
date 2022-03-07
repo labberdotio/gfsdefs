@@ -1,0 +1,30 @@
+
+# 
+# K8s nginx compose
+# 
+
+version: '1.0'
+
+# 
+# TYPES
+# 
+
+types:
+
+  KubernetesDeployment:
+    name: KubernetesDeployment
+    version: 1
+    property:
+      name: string
+      apiVersion: "#KubernetesAPIVersion"
+      spec: "#KubernetesDeploymentSpec"
+
+  KubernetesDeploymentSpec:
+    name: KubernetesDeploymentSpec
+    version: 1
+    property:
+      name: string
+      app: "#KubernetesApp"
+      replicas: string
+      containers:
+        - "#Container"

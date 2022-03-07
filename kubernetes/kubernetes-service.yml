@@ -1,0 +1,43 @@
+
+# 
+# K8s nginx compose
+# 
+
+version: '1.0'
+
+# 
+# TYPES
+# 
+
+types:
+
+  KubernetesService:
+    name: KubernetesService
+    version: 1
+    property:
+      name: string
+      apiVersion: "#KubernetesAPIVersion"
+      spec: "#KubernetesServiceSpec"
+
+  KubernetesServiceSpec:
+    name: KubernetesServiceSpec
+    version: 1
+    property:
+      name: string
+      app: "#KubernetesApp"
+      ports:
+        - "#KubernetesServicePort"
+
+  KubernetesServicePort:
+    name: KubernetesServicePort
+    version: 1
+    property:
+      name: string
+      protocol: string
+      port: "#Port"
+      targetPort: "#Port"
+    required:
+      - name
+      - protocol
+      - port
+      - targetPort

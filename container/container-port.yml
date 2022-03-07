@@ -1,0 +1,24 @@
+
+# 
+# K8s nginx compose
+# 
+
+version: '1.0'
+
+# 
+# TYPES
+# 
+
+types:
+
+  ContainerPort:
+    name: ContainerPort
+    version: 1
+    property:
+      name: string
+      protocol: string
+      containerPort: "#Port"
+    required:
+      - name
+      - protocol
+      - containerPort

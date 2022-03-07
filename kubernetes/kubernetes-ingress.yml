@@ -1,0 +1,59 @@
+
+# 
+# K8s nginx compose
+# 
+
+version: '1.0'
+
+# 
+# TYPES
+# 
+
+types:
+
+  KubernetesIngress:
+    name: KubernetesIngress
+    version: 1
+    property:
+      name: string
+      apiVersion: "#KubernetesAPIVersion"
+      spec: "#KubernetesIngressSpec"
+
+  KubernetesIngressSpec:
+    name: KubernetesIngressSpec
+    version: 1
+    property:
+      name: string
+      app: "#KubernetesApp"
+      rules:
+        - "#KubernetesIngressRule"
+
+  KubernetesIngressRule:
+    name: KubernetesIngressRule
+    version: 1
+    property:
+      name: string
+      paths:
+        - "#KubernetesIngressPath"
+
+  KubernetesIngressPath:
+    name: KubernetesIngressPath
+    version: 1
+    property:
+      name: string
+      path: string
+      pathType: string
+      service: "#KubernetesService"
+      port: "#KubernetesIngressPort"
+
+  KubernetesIngressPort:
+    name: KubernetesIngressPort
+    version: 1
+    property:
+      name: string
+      protocol: string
+      port: "#Port"
+    required:
+      - name
+      - protocol
+      - port
