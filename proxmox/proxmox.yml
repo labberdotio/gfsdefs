@@ -1,0 +1,302 @@
+
+#
+# proxmox.yml
+# Proxmox Types, y'all. 
+#
+
+---
+version: "1.0"
+types:
+
+  ProxmoxNode: 
+    version: 1
+    extends: '#Machine'
+    implements:
+      - '#Pulsable'
+      - '#Discoverable'
+    property:
+      name: string
+      icon: string
+# status endpoint props start.
+      cpuinfo: string
+      cpu: string
+      memory: string
+      swap: string
+      uptime: string
+      loadavg: string
+      idle: string
+      wait: string
+      ksm: string
+      rootfs: string
+      kversion: string
+      pveversion: string
+# status endpoint props end.
+      networkDevice0: string
+      networkDevice1: string
+      networkDevice2: string
+      networkDevice3: string
+      networkDevice4: string
+      networkDevice5: string
+      networkDevice6: string
+      networkDevice7: string
+      certs: string
+      dns1: string
+      dns2: string
+      dns3: string
+      search: string
+      hosts: string
+      time: string
+      firewall: string
+      diskController0: string
+      diskController1: string
+      diskDevice0: string
+      diskDevice1: string
+      diskDevice2: string
+      diskDevice3: string
+      diskDevice4: string
+      diskDevice5: string
+      diskDevice6: string
+      diskDevice7: string
+      lvmDevice0: string
+      lvmDevice1: string
+      lvmDevice2: string
+      lvmDevice3: string
+      lvmDevice4: string
+      lvmDevice5: string
+      lvmDevice6: string
+      lvmDevice7: string
+      lvmThinDevice0: string
+      lvmThinDevice1: string
+      lvmThinDevice2: string
+      lvmThinDevice3: string
+      lvmThinDevice4: string
+      lvmThinDevice5: string
+      lvmThinDevice6: string
+      lvmThinDevice7: string
+      directory: string
+      zfs: string
+      ceph: string
+
+      # # From PulsableInterface
+      # status: string
+      # lastStatusModifiedTime: integer
+      # statusTimeoutSecs: integer
+      # lastPulseModifiedTime: integer
+      # step: integer
+      # lastAgentUpdateID: string
+
+      # # DiscoverableInterface
+      # bootdisk: string
+      # cores: string
+      # memory: string
+      # sockets: string
+      # numa: string
+      # ostype: string
+
+  ProxmoxBaseVM:
+    version: 1
+    extends: '#Machine'
+    implements:
+      - '#Pulsable'
+      - '#Discoverable'
+    property:
+      name: string
+      vmId: string
+      vmName: string
+
+      # # From PulsableInterface
+      # status: string
+      # lastStatusModifiedTime: integer
+      # statusTimeoutSecs: integer
+      # lastPulseModifiedTime: integer
+      # step: integer
+      # lastAgentUpdateID: string
+
+      # # DiscoverableInterface
+      # bootdisk: string
+      # cores: string
+      # memory: string
+      # sockets: string
+      # numa: string
+      # ostype: string
+
+# the below are generated on creation of config and need synced back in 
+      smbios1: string
+      vmgenid: string
+# the below seem optional
+      # cpu: host,flags=+md-clear;+pcid;+spec-ctrl;+ssbd;+ibpb;+virt-ssbd;+amd-ssbd;+amd-no-ssb
+      cpu: string
+      cpulimit: string
+      balloon: string
+      bios: string
+      machine: string
+      agent: string
+      resourcePool: string
+      startup: string
+      vga: string
+      onboot: string
+      boot: string
+# proxmox API /qemu item bound
+      cpus: string
+      uptime: string
+      pid: string
+      digest: string
+      maxdisk: string
+      diskwrite: string
+      netout: string
+      netin: string
+# proxmox API /qemu item bound end.
+      serial0: string
+      serial1: string
+      serial2: string
+      serial3: string
+      # the value of the below can be something like 
+      # virtio=12:12:12:12:12:12,bridge=vmbr0,firewall=1,rate=10,queues=1,link_down=1
+      net0: string
+      net1: string
+      net2: string
+      net3: string
+      net4: string
+      net5: string
+      net6: string
+      net7: string
+      net8: string
+      net9: string      
+      net10: string
+      net11: string
+      net12: string
+      net13: string
+      net14: string
+      net15: string
+      net16: string
+      net17: string
+      net18: string
+      net19: string
+      net10: string
+      net11: string
+      net12: string
+      net13: string
+      net14: string
+      net15: string
+      net16: string
+      net17: string
+      net18: string
+      net19: string
+      net20: string
+      net21: string
+      net22: string
+      net23: string
+      net24: string
+      net25: string
+      net26: string
+      net27: string
+      net28: string
+      net29: string
+      net30: string
+      net31: string
+      scsihw: string
+      scsi0: string
+      scsi1: string
+      scsi2: string
+      scsi3: string
+      scsi4: string
+      scsi5: string
+      scsi6: string
+      scsi7: string
+      scsi8: string
+      scsi9: string
+      scsi10: string
+      scsi11: string
+      scsi12: string
+      scsi13: string
+      scsi14: string
+      scsi15: string
+      scsi16: string
+      scsi17: string
+      scsi18: string
+      scsi19: string
+      scsi20: string
+      scsi21: string
+      scsi22: string
+      scsi23: string
+      scsi24: string
+      scsi25: string
+      scsi26: string
+      scsi27: string
+      scsi28: string
+      scsi29: string
+      scsi30: string
+      scsiSize0: string
+      scsiSize1: string
+      scsiSize2: string
+      scsiSize3: string
+      scsiSize4: string
+      scsiSize5: string
+      scsiSize6: string
+      scsiSize7: string
+      scsiSize8: string
+      scsiSize9: string
+      scsiSize10: string
+      scsiSize11: string
+      scsiSize12: string
+      scsiSize13: string
+      scsiSize14: string
+      scsiSize15: string
+      scsiSize16: string
+      scsiSize17: string
+      scsiSize18: string
+      scsiSize19: string
+      scsiSize20: string
+      scsiSize21: string
+      scsiSize22: string
+      scsiSize23: string
+      scsiSize24: string
+      scsiSize25: string
+      scsiSize26: string
+      scsiSize27: string
+      scsiSize28: string
+      scsiSize29: string
+      scsiSize30: string
+      sata0: string
+      sata1: string
+      sata2: string
+      sata3: string
+      sata4: string
+      sata5: string
+      sataSize0: string
+      sataSize1: string
+      sataSize2: string
+      sataSize3: string
+      sataSize4: string
+      sataSize5: string
+# ide2: local:iso/linuxmint-20.1-cinnamon-64bit.iso,media=cdrom
+# ide3: local-lvm-1TB:vm-113-disk-4,size=10G
+      ide0: string
+      ide1: string
+      ide2: string
+      ide3: string
+      ideSize0: string
+      ideSize1: string
+      ideSize2: string
+      ideSize3: string
+      HostedOn: 
+        "#ProxmoxNode"
+
+  ProxmoxVMTemplate:
+    version: 1
+    extends: '#ProxmoxBaseVM'
+    property:
+      name: string
+      template: string
+    required:
+      - name
+      - template
+  ProxmoxVM:
+    version: 1
+    extends: '#ProxmoxBaseVM'
+    property: 
+      name: string
+      CloneOf: 
+        "#ProxmoxVMTemplate"
+    required:
+      - name
