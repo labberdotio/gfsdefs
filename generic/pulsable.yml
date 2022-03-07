@@ -1,0 +1,23 @@
+
+# 
+# pulsable.yml
+# 
+
+---
+version: '1.0'
+types:
+
+################ TO BE AT SOME POINT A COMMON LIBRARY
+## INTERFACES
+### 
+
+  Pulsable:
+    version: 1
+    property: 
+      name: string
+      status: string
+      lastStatusModifiedTime: string # integer
+      statusTimeoutSecs: string # integer
+      lastPulseModifiedTime: string # integer
+      step: string # integer
+      lastAgentUpdateID: string

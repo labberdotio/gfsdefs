@@ -1,0 +1,29 @@
+
+# 
+# discoverable.yml
+# 
+
+---
+version: '1.0'
+types:
+
+################ TO BE AT SOME POINT A COMMON LIBRARY
+## INTERFACES
+### 
+
+  # Discoverable:
+  #   version: 1
+  #   property: 
+  #     name: string
+  #     discovered: string
+  #     agentCreated: string
+
+  Discoverable:
+    version: 1
+    property: 
+      bootdisk: string
+      cores: string
+      memory: string
+      sockets: string
+      numa: string
+      ostype: string

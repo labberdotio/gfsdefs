@@ -1,0 +1,28 @@
+
+# 
+# host-alias.yml
+# 
+
+---
+version: '1.0'
+types:
+
+  HostAlias:
+    name: HostAlias
+    version: 1
+    property:
+      name: string
+      description: string
+      host: "#HostRecord"
+
+  HostAliasGroup:
+    name: HostAliasGroup
+    version: 1
+    property:
+      name: string
+      description: string
+      members:
+       - "#HostAlias"
+    required:
+      - name
+      - description

@@ -1,0 +1,19 @@
+
+# 
+# tftp-service.yml
+# 
+
+---
+version: '1.0'
+types:
+
+  TFTPService:
+    name: 'TFTPService'
+    version: 1
+    properties:
+      name: string
+      port: string
+      configuredMachine: '#Machine'
+    required:
+      - name
+      - port

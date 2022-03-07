@@ -1,0 +1,61 @@
+
+# 
+# dhcp-service.yml
+# 
+
+---
+version: '1.0'
+types:
+
+  DHCPService:
+    name: DHCPService
+    version: 1
+    extends: "#Service"
+    implements:
+      - "#Deployable"
+      - "#Runnable"
+    property:
+      defaultLeaseTime: string
+      maxLeaseTime: string
+      deployed:
+        - "#Ip"
+      subnets:
+        - "#Subnet"
+      resolvers:
+        - "#RemoteHostGroup"
+      # hosts:
+      #   - "#Machine"
+      # groups:
+      #   - "#MachineGroup"
+      hosts:
+        - "#MachineGroup"
+      aliases:
+        - "#MachineAliasGroup"
+      # services:
+      #   - "#DeployedServiceGroup"
+      options: 
+        - "#DHCPServiceOption"
+    required:
+      - defaultLeaseTime
+      - maxLeaseTime
+
+  DHCPServiceSubnet:
+    name: DHCPServiceSubnet
+    version: 1
+    extends: "#Subnet"
+    property:
+      options: 
+        - "#DHCPServiceOption"
+    required:
+      - name
+      - value
+
+  DHCPServiceOption:
+    name: DHCPServiceOption
+    version: 1
+    property:
+      name: string
+      value: string
+    required:
+      - name
+      - value

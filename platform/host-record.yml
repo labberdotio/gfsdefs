@@ -1,0 +1,30 @@
+
+# 
+# host-record.yml
+# 
+
+---
+version: '1.0'
+types:
+
+  HostRecord:
+    name: HostRecord
+    version: 1
+    extends: "#Machine"
+    property:
+      name: string
+      description: string
+      # host: "#Machine"    
+
+  HostRecordGroup:
+    name: HostRecordGroup
+    version: 1
+    extends: "#MachineGroup"
+    property:
+      name: string
+      description: string
+      members:
+       - "#HostRecord"
+    required:
+      - name
+      - description

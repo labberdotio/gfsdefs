@@ -1,0 +1,16 @@
+
+# 
+# deployable.yml
+# 
+
+---
+version: '1.0'
+types:
+
+  Deployable:
+    name: Deployable
+    version: 1
+    property:
+      isDeployed: string
+      target: "#Machine"
+    required: []

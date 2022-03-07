@@ -1,0 +1,28 @@
+
+# 
+# machine-alias.yml
+# 
+
+---
+version: '1.0'
+types:
+
+  MachineAlias:
+    name: MachineAlias
+    version: 1
+    property:
+      name: string
+      description: string
+      host: "#Machine"
+
+  MachineAliasGroup:
+    name: MachineAliasGroup
+    version: 1
+    property:
+      name: string
+      description: string
+      members:
+       - "#MachineAlias"
+    required:
+      - name
+      - description

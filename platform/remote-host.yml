@@ -1,0 +1,32 @@
+
+# 
+# remote-host.yml
+# 
+
+---
+version: '1.0'
+types:
+
+  RemoteHost:
+    name: RemoteHost
+    version: 1
+    property:
+      name: string
+      description: string
+      addresses:
+        - "#Ip"
+    required:
+      - name
+      - description
+
+  RemoteHostGroup:
+    name: RemoteHostGroup
+    version: 1
+    property:
+      name: string
+      description: string
+      members:
+       - "#RemoteHost"
+    required:
+      - name
+      - description

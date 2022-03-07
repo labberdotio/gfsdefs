@@ -1,0 +1,38 @@
+
+# 
+# deployed-service.yml
+# 
+
+---
+version: '1.0'
+types:
+
+  DeployedService:
+    name: DeployedService
+    version: 1
+    extends: "#Service"
+    implements:
+      - "#Deployable"
+      - "#Runnable"
+    property:
+      name: string
+      description: string
+      pcol: string
+      host: "#Machine"
+      alias: "#MachineAlias"
+      port: string
+      path: string
+    required:
+      - port
+
+  DeployedServiceGroup:
+    name: DeployedServiceGroup
+    version: 1
+    property:
+      name: string
+      description: string
+      members:
+        - "#DeployedService"
+    required:
+      - name
+      - description

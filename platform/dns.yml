@@ -1,0 +1,59 @@
+
+# 
+# dns.yml
+# 
+
+---
+version: '1.0'
+types:
+
+  Zone:
+    name: 'Zone'
+    version: 1
+    properties:
+      name: string
+      ns: string
+      soa: string
+      primary: string
+      refresh: string
+      retry: string
+      TTL: string
+    # required:
+      # - network
+      # - netmask
+      # - rangeStart
+      # - rangeEnd
+      # - routers
+      # - nextServer
+
+  SRV:
+    name: 'SRV'
+    version: 1
+    properties:
+      name: string
+      service: string
+      protocol: string
+      priority: string
+      weight: string
+      port: string
+    required:
+      - service
+      - protocol
+      - priority
+      - weight
+      - port
+
+  SOA:
+    name: 'SOA'
+    version: 1
+    properties:
+      name: string
+      primary: string
+      refresh: string
+      retry: string
+      TTL: string
+    required:
+      - primary
+      - refresh
+      - retry
+      - TTL

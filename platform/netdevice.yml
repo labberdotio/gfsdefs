@@ -1,0 +1,21 @@
+
+# 
+# netdevice.yml
+# 
+
+---
+version: '1.0'
+types:
+
+  NetDevice:
+    name: NetDevice
+    version: 1
+    property:
+      name: string
+      description: string
+      hwaddr: string
+      addresses:
+        - "#Ip"
+    required:
+      - name
+      - hwaddr

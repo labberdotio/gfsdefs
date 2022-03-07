@@ -1,0 +1,16 @@
+
+# 
+# runnable.yml
+# 
+
+---
+version: '1.0'
+types:
+
+  Runnable:
+    name: Runnable
+    version: 1
+    property:
+      isRunning: string
+      status: string
+    required: []

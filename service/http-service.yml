@@ -1,0 +1,22 @@
+
+# 
+# http-service.yml
+# 
+
+---
+version: '1.0'
+types:
+
+  HTTPService:
+    name: HTTPService
+    version: 1
+    extends: "#Service"
+    implements:
+      - "#Deployable"
+      - "#Runnable"
+    property:
+      port: string
+      services:
+        - "#DeployedServiceGroup"
+    required:
+      - port

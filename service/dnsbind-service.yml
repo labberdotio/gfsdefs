@@ -1,0 +1,36 @@
+
+# 
+# dnsbind-service.yml
+# 
+
+---
+version: '1.0'
+types:
+
+  DNSBINDService:
+    name: DNSBINDService
+    version: 1
+    extends: "#Service"
+    implements:
+      - "#Deployable"
+      - "#Runnable"
+    property:
+      # deployed:
+      #   - "#Ip"
+      deployed:
+        - "#Machine"
+      subnets:
+        - "#Subnet"
+      resolvers:
+        - "#RemoteHostGroup"
+      # hosts:
+      #   - "#Machine"
+      # groups:
+      #   - "#MachineGroup"
+      hosts:
+        - "#MachineGroup"
+      aliases:
+        - "#MachineAliasGroup"
+      # services:
+      #   - "#DeployedServiceGroup"
+    # required:

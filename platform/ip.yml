@@ -1,0 +1,19 @@
+
+# 
+# ip.yml
+# 
+
+---
+version: '1.0'
+types:
+
+  Ip:
+    name: Ip
+    version: 1
+    property:
+      name: string
+      description: string
+      address: string
+    required:
+      - name
+      - address

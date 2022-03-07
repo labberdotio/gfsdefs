@@ -1,0 +1,32 @@
+
+# 
+# subnet.yml
+# 
+
+---
+version: '1.0'
+types:
+
+  Subnet:
+    name: Subnet
+    version: 1
+    property:
+      name: string
+      description: string
+      network: "#Ip"
+      netmask: "#Ip"
+      rangeStart: "#Ip"
+      rangeEnd: "#Ip"
+      # Should this be a machine?
+      routers:
+        - "#Ip"
+      # Should this be a machine?
+      resolvers:
+        - "#Ip"
+      # Should this be a machine?
+      nextServer: "#Ip"
+      routes:
+        - "#Ip"
+      # local:
+      #   - "#Ip"
+    required: []

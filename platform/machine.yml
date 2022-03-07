@@ -1,0 +1,61 @@
+
+# 
+# machine.yml
+# 
+
+---
+version: '1.0'
+types:
+
+  Machine:
+    name: Machine
+    version: 1
+    property:
+      name: string
+      arch: string
+      memory: string
+      cpus: string
+      cores: string
+      kernel: string
+      version: string
+      machine: string
+      processor: string
+      platform: string
+      system: string
+      vendor: string
+      description: string
+      release: string
+      codename: string
+      interfaces:
+        - "#NetDevice"
+      # interface:
+      #   - "#NetDevice"
+      interface: "#NetDevice"
+    required:
+      - name
+      - arch
+      - memory
+      - cpus
+      - cores
+      - kernel
+      - version
+      - machine
+      - processor
+      - platform
+      - system
+      - vendor
+      # - description
+      - release
+      - codename
+
+  MachineGroup:
+    name: MachineGroup
+    version: 1
+    property:
+      name: string
+      description: string
+      members:
+        - "#Machine"
+    required:
+      - name
+      - description

@@ -1,0 +1,22 @@
+
+# 
+# K8s nginx compose
+# 
+
+version: '1.0'
+
+# 
+# TYPES
+# 
+
+types:
+
+  Port:
+    name: Port
+    version: 1
+    property:
+      name: string
+      port: string
+    required:
+      - name
+      - port

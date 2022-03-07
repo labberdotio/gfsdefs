@@ -1,0 +1,34 @@
+
+# 
+# dnsmasq-service.yml
+# 
+
+---
+version: '1.0'
+types:
+
+  DNSMasqService:
+    name: DNSMasqService
+    version: 1
+    extends: "#Service"
+    implements:
+      - "#Deployable"
+      - "#Runnable"
+    property:
+      deployed:
+        - "#Ip"
+      subnets:
+        - "#Subnet"
+      resolvers:
+        - "#RemoteHostGroup"
+      # hosts:
+      #   - "#Machine"
+      # groups:
+      #   - "#MachineGroup"
+      hosts:
+        - "#MachineGroup"
+      aliases:
+        - "#MachineAliasGroup"
+      # services:
+      #   - "#DeployedServiceGroup"
+    # required:
