@@ -1,0 +1,94 @@
+
+#
+# proxmox.yml
+# Proxmox Types, y'all. 
+#
+
+---
+version: "1.0"
+types:
+
+  ProxmoxNode: 
+    version: 1
+    extends: '#Machine'
+    implements:
+      - '#Pulsable'
+      - '#Discoverable'
+    property:
+      name: string
+      icon: string
+# status endpoint props start.
+      cpuinfo: string
+      cpu: string
+      memory: string
+      swap: string
+      uptime: string
+      loadavg: string
+      idle: string
+      wait: string
+      ksm: string
+      rootfs: string
+      kversion: string
+      pveversion: string
+# status endpoint props end.
+      networkDevice0: string
+      networkDevice1: string
+      networkDevice2: string
+      networkDevice3: string
+      networkDevice4: string
+      networkDevice5: string
+      networkDevice6: string
+      networkDevice7: string
+      certs: string
+      dns1: string
+      dns2: string
+      dns3: string
+      search: string
+      hosts: string
+      time: string
+      firewall: string
+      diskController0: string
+      diskController1: string
+      diskDevice0: string
+      diskDevice1: string
+      diskDevice2: string
+      diskDevice3: string
+      diskDevice4: string
+      diskDevice5: string
+      diskDevice6: string
+      diskDevice7: string
+      lvmDevice0: string
+      lvmDevice1: string
+      lvmDevice2: string
+      lvmDevice3: string
+      lvmDevice4: string
+      lvmDevice5: string
+      lvmDevice6: string
+      lvmDevice7: string
+      lvmThinDevice0: string
+      lvmThinDevice1: string
+      lvmThinDevice2: string
+      lvmThinDevice3: string
+      lvmThinDevice4: string
+      lvmThinDevice5: string
+      lvmThinDevice6: string
+      lvmThinDevice7: string
+      directory: string
+      zfs: string
+      ceph: string
+
+      # # From PulsableInterface
+      # status: string
+      # lastStatusModifiedTime: integer
+      # statusTimeoutSecs: integer
+      # lastPulseModifiedTime: integer
+      # step: integer
+      # lastAgentUpdateID: string
+
+      # # DiscoverableInterface
+      # bootdisk: string
+      # cores: string
+      # memory: string
+      # sockets: string
+      # numa: string
+      # ostype: string

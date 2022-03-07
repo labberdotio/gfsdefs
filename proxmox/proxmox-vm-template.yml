@@ -1,0 +1,28 @@
+
+#
+# proxmox.yml
+# Proxmox Types, y'all. 
+#
+
+---
+version: "1.0"
+types:
+
+  ProxmoxVMTemplate:
+    version: 1
+    extends: '#ProxmoxBaseVM'
+    property:
+      name: string
+      template: string
+    required:
+      - name
+      - template
+  ProxmoxVM:
+    version: 1
+    extends: '#ProxmoxBaseVM'
+    property: 
+      name: string
+      CloneOf: 
+        "#ProxmoxVMTemplate"
+    required:
+      - name
