@@ -20,7 +20,7 @@ types:
 
   Discoverable:
     version: 1
-    property: 
+    properties: 
       bootdisk: string
       cores: string
       memory: string

@@ -13,11 +13,11 @@ types:
 
   Pulsable:
     version: 1
-    property: 
+    properties: 
       name: string
-      status: string
-      lastStatusModifiedTime: string # integer
-      statusTimeoutSecs: string # integer
-      lastPulseModifiedTime: string # integer
-      step: string # integer
+      status: '#Status' # string
+      lastStatusModifiedTime: integer # string # integer
+      statusTimeoutSecs: integer # string # integer
+      lastPulseModifiedTime: integer # string # integer
+      step: integer # string # integer
       lastAgentUpdateID: string
