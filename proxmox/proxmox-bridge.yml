@@ -1,0 +1,17 @@
+
+# 
+# proxmox-bridge.yml
+# 
+
+---
+version: '1.0'
+types:
+
+  ProxmoxBridge:
+    name: ProxmoxBridge
+    version: 1
+    property:
+      name: string
+      description: string
+    required:
+      - name

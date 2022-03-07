@@ -1,0 +1,16 @@
+
+# 
+# proxmox-netdevice.yml
+# 
+
+---
+version: '1.0'
+types:
+
+  ProxmoxNetDevice:
+    name: ProxmoxNetDevice
+    version: 1
+    extends: "#NetDevice"
+    property:
+      bridge: "#ProxmoxBridge"
+    required: []

@@ -1,0 +1,18 @@
+
+# 
+# volume.yml
+# 
+
+---
+version: '1.0'
+types:
+
+  Volume:
+    name: Volume
+    version: 1
+    property:
+      name: string
+      description: string
+      media: string
+      size: string
+    required: []
