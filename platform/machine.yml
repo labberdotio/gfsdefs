@@ -38,7 +38,7 @@ types:
       - cpus
       - cores
       - kernel
-      - version
+      # - version
       - machine
       - processor
       - platform
@@ -46,7 +46,7 @@ types:
       - vendor
       # - description
       - release
-      - codename
+      # - codename
 
   MachineGroup:
     name: MachineGroup

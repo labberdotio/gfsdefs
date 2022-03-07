@@ -46,9 +46,9 @@ types:
     property:
       options: 
         - "#DHCPServiceOption"
-    required:
-      - name
-      - value
+    # required:
+    #   - name
+    #   - value
 
   DHCPServiceOption:
     name: DHCPServiceOption
