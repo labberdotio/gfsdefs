@@ -1,0 +1,17 @@
+
+# 
+# truenas.yml
+# 
+
+---
+version: '1.0'
+types:
+
+  TrueNASVolumeSnapshot:
+    version: 1
+    property:
+      name: string
+      description: string
+      media: string
+      size: string
+    required: []

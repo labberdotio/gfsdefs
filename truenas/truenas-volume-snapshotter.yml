@@ -1,0 +1,20 @@
+
+# 
+# truenas.yml
+# 
+
+---
+version: '1.0'
+types:
+
+  TrueNASVolumeSnapshotter:
+    version: 1
+    extends: "#VolumeSnapshotter"
+    implements:
+      - "#Pulsable"
+      - "#Discoverable"
+    property:
+      name: string
+      description: string
+      connection: "#TrueNASServiceConnection"
+    required: []
