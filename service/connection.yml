@@ -1,0 +1,27 @@
+
+# 
+# 
+# 
+
+version: '1.0'
+
+# 
+# TYPES
+# 
+
+types:
+
+  Connection:
+    name: Connection
+    version: 1
+    property:
+      name: string
+      description: string
+      authType: string
+      authHeader: string
+      username: string
+      password: string
+      tokenName: string
+      tokenSecret: string
+    required:
+      - name
