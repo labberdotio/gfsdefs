@@ -1,0 +1,23 @@
+
+# 
+# truenas.yml
+# 
+
+---
+version: '1.0'
+types:
+
+  TrueNASServiceConnection:
+    version: 1
+    extends: "#ServiceConnection"
+    property:
+      name: string
+      description: string
+      authType: string
+      authHeader: string
+      username: string
+      password: string
+      tokenName: string
+      tokenSecret: string
+      service: "#TrueNASService"
+    required: []

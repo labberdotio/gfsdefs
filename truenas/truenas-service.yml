@@ -1,0 +1,22 @@
+
+# 
+# truenas.yml
+# 
+
+---
+version: '1.0'
+types:
+
+  TrueNASService:
+    version: 1
+    # extends: "#Service"
+    extends: "#DeployedService"
+    property:
+      name: string
+      description: string
+      pcol: string
+      host: "#Machine"
+      alias: "#MachineAlias"
+      port: string
+      path: string
+    required: []
