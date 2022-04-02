@@ -1,0 +1,22 @@
+
+# 
+# volume-snapshot.yml
+# 
+
+---
+version: '1.0'
+types:
+
+  VolumeSnapshot:
+    name: VolumeSnapshot
+    version: 1
+    extends: "#Volume"
+    property:
+      name: string
+      description: string
+      media: string
+      size: string
+      started: string
+      completed: string
+      volume: "#Volume"
+    required: []

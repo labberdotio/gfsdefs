@@ -1,0 +1,20 @@
+
+# 
+# volume-snapshotter.yml
+# 
+
+---
+version: '1.0'
+types:
+
+  VolumeSnapshotter:
+    name: VolumeSnapshotter
+    version: 1
+    property:
+      name: string
+      description: string
+      volumes:
+        - "#Volume"
+      snapshots:
+        - "#VolumeSnapshot"
+    required: []
