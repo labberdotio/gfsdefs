@@ -8,7 +8,6 @@ version: '1.0'
 interfaces:
 
   Deployable:
-    name: Deployable
     version: 1
     property:
       isDeployed: string

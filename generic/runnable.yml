@@ -8,7 +8,6 @@ version: '1.0'
 interfaces:
 
   Runnable:
-    name: Runnable
     version: 1
     property:
       isRunning: string

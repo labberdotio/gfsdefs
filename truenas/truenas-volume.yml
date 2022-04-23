@@ -1,6 +1,6 @@
 
 # 
-# volume.yml
+# truenas-volume.yml
 # 
 
 ---
@@ -13,6 +13,7 @@ types:
     implements:
       - '#Pulsable'
       - '#Discoverable'
+      - '#Triggerable'
     property:
       name: string
       description: string

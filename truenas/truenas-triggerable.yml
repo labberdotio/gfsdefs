@@ -1,31 +1,15 @@
 
 # 
-# triggerable.yml
+# truenas-triggerable.yml
 # 
 
 ---
 version: '1.0'
-interfaces:
-
-  Triggerable:
-    version: 1
-    property:
-      onCreate:
-        - "#Trigger"
-      onUpdate:
-        - "#Trigger"
-      onDelete:
-        - "#Trigger"
-      onLink:
-        - "#Trigger"
-      onUnlink:
-        - "#Trigger"
-    required: []
-
 types:
 
-  Trigger:
+  TrueNASTrigger:
     version: 1
+    extends: "#Trigger"
     property:
       # chain:
       #   - string

@@ -8,7 +8,6 @@ version: '1.0'
 interfaces:
 
   Accessible:
-    name: Accessible
     version: 1
     property: []
     required: []
