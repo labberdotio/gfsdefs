@@ -5,7 +5,8 @@
 
 ---
 version: '1.0'
-types:
+# types:
+interfaces:
 
 ################ TO BE AT SOME POINT A COMMON LIBRARY
 ## INTERFACES

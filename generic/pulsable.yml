@@ -5,7 +5,8 @@
 
 ---
 version: '1.0'
-types:
+# types:
+interfaces:
 
 ################ TO BE AT SOME POINT A COMMON LIBRARY
 ## INTERFACES
@@ -15,7 +16,8 @@ types:
     version: 1
     properties: 
       name: string
-      status: '#Status' # string
+      # This one should be a PulsableStatus probably
+      status: string # '#Status' # string
       lastStatusModifiedTime: integer # string # integer
       statusTimeoutSecs: integer # string # integer
       lastPulseModifiedTime: integer # string # integer

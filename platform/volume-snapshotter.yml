@@ -17,4 +17,5 @@ types:
         - "#Volume"
       snapshots:
         - "#VolumeSnapshot"
+      service: "#Service"
     required: []

@@ -15,4 +15,17 @@ types:
       description: string
       media: string
       size: string
+      service: "#Service"
     required: []
+
+  VolumeGroup:
+    name: VolumeGroup
+    version: 1
+    property:
+      name: string
+      description: string
+      members:
+        - "#Volume"
+    required:
+      - name
+      - description

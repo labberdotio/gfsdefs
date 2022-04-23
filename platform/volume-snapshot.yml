@@ -20,3 +20,15 @@ types:
       completed: string
       volume: "#Volume"
     required: []
+
+  VolumeSnapshotGroup:
+    name: VolumeSnapshotGroup
+    version: 1
+    property:
+      name: string
+      description: string
+      members:
+        - "#VolumeSnapshot"
+    required:
+      - name
+      - description

@@ -1,15 +1,15 @@
 
 # 
-# volume-snapshot.yml
+# volume.yml
 # 
 
 ---
 version: '1.0'
 types:
 
-  TrueNASVolumeSnapshot:
+  TrueNASVolume:
     version: 1
-    extends: "#VolumeSnapshot"
+    extends: "#Volume"
     implements:
       - '#Pulsable'
       - '#Discoverable'
@@ -18,7 +18,5 @@ types:
       description: string
       media: string
       size: string
-      started: string
-      completed: string
-      volume: "#Volume"
+      service: "#Service"
     required: []

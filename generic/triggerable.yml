@@ -1,0 +1,15 @@
+
+# 
+# triggerable.yml
+# 
+
+---
+version: '1.0'
+interfaces:
+
+  Triggerable:
+    name: Triggerable
+    version: 1
+    property:
+      ...
+    required: []
