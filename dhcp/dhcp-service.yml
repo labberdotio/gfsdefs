@@ -4,6 +4,7 @@
 # 
 
 version: '1.0'
+name: dhcp/dhcp-service.yml
 types:
 
   DHCPService:

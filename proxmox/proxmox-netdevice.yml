@@ -4,6 +4,7 @@
 # 
 
 version: '1.0'
+name: proxmox/proxmox-netdevice.yml
 types:
 
   ProxmoxNetDevice:

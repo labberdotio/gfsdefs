@@ -5,6 +5,7 @@
 #
 
 version: "1.0"
+name: proxmox/proxmox-vm-template.yml
 types:
 
   ProxmoxVMTemplate:

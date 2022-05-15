@@ -4,6 +4,7 @@
 # 
 
 version: '1.0'
+name: kubernetes/kubernetes-service.yml
 
 # 
 # TYPES

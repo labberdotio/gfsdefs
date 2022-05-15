@@ -4,6 +4,7 @@
 # 
 
 version: '1.0'
+name: truenas/truenas-volume-snapshot.yml
 types:
 
   TrueNASVolumeSnapshot:

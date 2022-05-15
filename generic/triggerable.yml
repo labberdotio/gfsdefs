@@ -4,6 +4,7 @@
 # 
 
 version: '1.0'
+name: generic/triggerable.yml
 interfaces:
 
   Triggerable:

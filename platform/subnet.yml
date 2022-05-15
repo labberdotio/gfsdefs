@@ -4,6 +4,7 @@
 # 
 
 version: '1.0'
+name: platform/subnet.yml
 types:
 
   Subnet:
