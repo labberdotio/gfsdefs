@@ -4,7 +4,6 @@
 # Proxmox Types, y'all. 
 #
 
----
 version: "1.0"
 types:
 

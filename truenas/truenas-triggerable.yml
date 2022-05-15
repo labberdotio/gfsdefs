@@ -3,7 +3,6 @@
 # truenas-triggerable.yml
 # 
 
----
 version: '1.0'
 types:
 

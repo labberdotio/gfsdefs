@@ -3,7 +3,6 @@
 # deployable.yml
 # 
 
----
 version: '1.0'
 interfaces:
 
@@ -11,5 +10,5 @@ interfaces:
     version: 1
     property:
       isDeployed: string
-      target: "#Machine"
+      # target: "#Machine"
     required: []
