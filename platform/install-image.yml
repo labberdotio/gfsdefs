@@ -1,0 +1,34 @@
+
+# 
+# install-image.yml
+# 
+
+version: '1.0'
+name: platform/install-image.yml
+types:
+
+  InstallImage:
+    name: InstallImage
+    version: 1
+    property:
+      name: string
+      description: string
+      version: string
+      image: string
+      # host: string
+      port: string
+      # install image uri, should not really be here
+      # replace this with a NAS service endpoint
+      uri: string
+
+  InstallImageGroup:
+    name: InstallImageGroup
+    version: 1
+    property:
+      name: string
+      description: string
+      members:
+       - "#InstallImage"
+    required:
+      - name
+      - description
