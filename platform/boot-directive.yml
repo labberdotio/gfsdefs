@@ -1,0 +1,39 @@
+
+# 
+# boot-directive.yml
+# 
+
+version: '1.0'
+name: platform/boot-directive.yml
+types:
+
+  BootDirective:
+    name: BootDirective
+    version: 1
+    property:
+      name: string
+      description: string
+      # node: "#Machine"
+      # nodeMgmt: "#Machine"
+      machine: "#Machine"
+      nodeBoot: string
+      distro: "#InstallImage"
+      kickstart: "#KickStart"
+      iSCSIServerHost: string
+      iSCSIServerPort: string
+      iSCSILun: string
+      nodeInstallInterface: string
+      localInstallIPXEDevice: string
+      distroInstallDevice: string
+
+  BootDirectiveGroup:
+    name: BootDirectiveGroup
+    version: 1
+    property:
+      name: string
+      description: string
+      members:
+       - "#BootDirective"
+    required:
+      - name
+      - description

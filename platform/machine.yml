@@ -30,7 +30,10 @@ types:
         - "#NetDevice"
       # interface:
       #   - "#NetDevice"
+      # deprecated: replace interface with defaultInterface
       interface: "#NetDevice"
+      defaultInterface: "#NetDevice"
+      managementInterface: "#NetDevice"
     required:
       - name
       - arch

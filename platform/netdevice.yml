@@ -13,6 +13,8 @@ types:
     property:
       name: string
       description: string
+      # device should probably be a link to a device type/enum
+      device: string
       hwaddr: string
       addresses:
         - "#Ip"
