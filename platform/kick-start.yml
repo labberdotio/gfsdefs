@@ -1,0 +1,33 @@
+
+# 
+# kick-start.yml
+# 
+
+version: '1.0'
+name: platform/kick-start.yml
+types:
+
+  KickStart:
+    name: KickStart
+    version: 1
+    property:
+      name: string
+      description: string
+      # host: string
+      port: string
+      path: string
+      # kick start uri, should not really be here
+      # replace this with a NAS service endpoint
+      uri: string
+
+  KickStartGroup:
+    name: KickStartGroup
+    version: 1
+    property:
+      name: string
+      description: string
+      members:
+       - "#KickStart"
+    required:
+      - name
+      - description
