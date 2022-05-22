@@ -20,6 +20,9 @@ types:
       # install image uri, should not really be here
       # replace this with a NAS service endpoint
       uri: string
+      kernel: string
+      initrd: string
+      imgargs: string
 
   InstallImageGroup:
     name: InstallImageGroup
