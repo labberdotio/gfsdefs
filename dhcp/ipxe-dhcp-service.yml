@@ -1,6 +1,6 @@
 
 # 
-# dhcp-service.yml
+# ipxe-dhcp-service.yml
 # 
 
 version: '1.0'
@@ -38,7 +38,6 @@ types:
         - "#KickStartGroup"
       installImages:
         - "#InstallImageGroup"
-
     required:
       - defaultLeaseTime
       - maxLeaseTime
