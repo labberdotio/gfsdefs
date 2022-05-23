@@ -1,0 +1,44 @@
+
+# 
+# dhcp-service.yml
+# 
+
+version: '1.0'
+name: dhcp/ipxe-dhcp-service.yml
+types:
+
+  IPXEDHCPService:
+    name: IPXEDHCPService
+    version: 1
+    extends: "#DHCPService"
+    property:
+      defaultLeaseTime: string
+      maxLeaseTime: string
+      deployed:
+        - "#Ip"
+      subnets:
+        - "#Subnet"
+      resolvers:
+        - "#RemoteHostGroup"
+      # hosts:
+      #   - "#Machine"
+      # groups:
+      #   - "#MachineGroup"
+      hosts:
+        - "#MachineGroup"
+      aliases:
+        - "#MachineAliasGroup"
+      # services:
+      #   - "#DeployedServiceGroup"
+      options: 
+        - "#DHCPServiceOption"
+      bootDirectives:
+        - "#BootDirectiveGroup"
+      kickStarts:
+        - "#KickStartGroup"
+      installImages:
+        - "#InstallImageGroup"
+
+    required:
+      - defaultLeaseTime
+      - maxLeaseTime
