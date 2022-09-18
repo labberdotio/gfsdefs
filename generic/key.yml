@@ -1,0 +1,35 @@
+
+# 
+# key.yml
+# 
+
+version: '1.0'
+name: generic/key.yml
+
+# 
+# TYPES
+# 
+
+types:
+
+  PublicKey:
+    name: PublicKey
+    version: 1
+    property:
+      name: string
+      value: string
+
+  PrivateKey:
+    name: PrivateKey
+    version: 1
+    property:
+      name: string
+      value: string
+
+  KeyPair:
+    name: KeyPair
+    version: 1
+    property:
+      name: string
+      publicKey: "#PublicKey"
+      privateKey: "#PrivateKey"

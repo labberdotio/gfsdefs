@@ -1,0 +1,24 @@
+
+# 
+# K8s nginx compose
+# 
+
+version: '1.0'
+name: kubernetes/kubernetes-cluster.yml
+
+# 
+# TYPES
+# 
+
+types:
+
+  KubernetesCluster:
+    name: KubernetesCluster
+    version: 1
+    property:
+      name: string
+      displayName: string
+      serverProtocol: string
+      serverAddress: "#Ip"
+      serverPort: "#Port"
+      certificateAuthority: "#Certificate"
