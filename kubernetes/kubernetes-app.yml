@@ -15,5 +15,7 @@ types:
   KubernetesApp:
     name: KubernetesApp
     version: 1
+    extends: "#App"
     property:
       name: string
+      displayName: string

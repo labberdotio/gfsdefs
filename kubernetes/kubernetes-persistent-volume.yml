@@ -4,7 +4,7 @@
 # 
 
 version: '1.0'
-name: kubernetes/kubernetes-deployment.yml
+name: kubernetes/kubernetes-persistent-volume.yml
 
 # 
 # TYPES
@@ -12,8 +12,8 @@ name: kubernetes/kubernetes-deployment.yml
 
 types:
 
-  KubernetesDeployment:
-    name: KubernetesDeployment
+  KubernetesPersistentVolumeClaim:
+    name: KubernetesPersistentVolumeClaim
     version: 1
     property:
       name: string
@@ -22,19 +22,17 @@ types:
       metadataName: string
       metadataNamespace: "#KubernetesNamespace"
       metadataApp: "#KubernetesApp"
-      spec: "#KubernetesDeploymentSpec"
+      spec: "#KubernetesPersistentVolumeClaimSpec"
 
-  KubernetesDeploymentSpec:
-    name: KubernetesDeploymentSpec
+  KubernetesPersistentVolumeClaimSpec:
+    name: KubernetesPersistentVolumeClaimSpec
     version: 1
     property:
       name: string
-      app: "#KubernetesApp"
-      replicas: string
-      containers:
-        - "#Container"
-      volumes:
-        - "#KubernetesVolume"
+      accessModes:
+        - "#KubernetesAccessMode"
+      storageClass: "#KubernetesStorageClass"
+      storageSize: string
       matchApp: "#KubernetesApp"
       matchLabels:
         - "#KubernetesLabel"

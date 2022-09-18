@@ -1,0 +1,23 @@
+
+# 
+# K8s nginx compose
+# 
+
+version: '1.0'
+name: kubernetes/kubernetes-volume.yml
+
+# 
+# TYPES
+# 
+
+types:
+
+  KubernetesVolume:
+    name: KubernetesVolume
+    version: 1
+    extends: "#ContainerVolume"
+    property:
+      name: string
+      displayName: string
+      mountPath: string
+      persistentVolumeClaim: "#KubernetesPersistentVolumeClaim"

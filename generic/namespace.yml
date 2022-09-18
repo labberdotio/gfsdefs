@@ -1,0 +1,20 @@
+
+# 
+# namespace.yml
+# 
+
+version: '1.0'
+name: generic/namespace.yml
+
+# 
+# TYPES
+# 
+
+types:
+
+  Namespace:
+    name: Namespace
+    version: 1
+    property:
+      name: string
+      # displayName: string

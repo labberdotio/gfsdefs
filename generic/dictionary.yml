@@ -1,0 +1,30 @@
+
+# 
+# dictionary.yml
+# 
+
+version: '1.0'
+name: generic/dictionary.yml
+
+# 
+# TYPES
+# 
+
+types:
+
+  Dictionary:
+    name: Dictionary
+    version: 1
+    property:
+      name: string
+      # displayName: string
+      entries:
+        - "#DictionaryEntry"
+
+  DictionaryEntry:
+    name: DictionaryEntry
+    version: 1
+    property:
+      name: string
+      key: string
+      value: string

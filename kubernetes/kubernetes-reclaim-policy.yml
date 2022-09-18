@@ -1,0 +1,34 @@
+
+# 
+# K8s nginx compose
+# 
+
+version: '1.0'
+name: kubernetes/kubernetes-reclaim-policy.yml
+
+# 
+# ENUMS
+# 
+
+# enums:
+
+#   KubernetesReclaimPolicy:
+#     name: KubernetesReclaimPolicy
+#     version: 1
+#     values:
+#       - Retain
+#       - Recycle
+#       - Delete
+
+# 
+# TYPES
+# 
+
+types:
+
+  KubernetesReclaimPolicy:
+    name: KubernetesReclaimPolicy
+    version: 1
+    property:
+      name: string
+      displayName: string

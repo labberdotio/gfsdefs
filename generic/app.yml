@@ -1,0 +1,20 @@
+
+# 
+# app.yml
+# 
+
+version: '1.0'
+name: generic/app.yml
+
+# 
+# TYPES
+# 
+
+types:
+
+  App:
+    name: App
+    version: 1
+    property:
+      name: string
+      # displayName: string

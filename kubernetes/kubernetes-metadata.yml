@@ -1,0 +1,19 @@
+
+# # 
+# # K8s nginx compose
+# # 
+
+# version: '1.0'
+# name: kubernetes/kubernetes-metadata.yml
+
+# # 
+# # TYPES
+# # 
+
+# types:
+
+#   KubernetesMetadata:
+#     name: KubernetesMetadata
+#     version: 1
+#     property:
+#       name: string

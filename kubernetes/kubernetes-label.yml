@@ -4,7 +4,7 @@
 # 
 
 version: '1.0'
-name: kubernetes/kubernetes-api-version.yml
+name: kubernetes/kubernetes-label.yml
 
 # 
 # TYPES
@@ -12,9 +12,10 @@ name: kubernetes/kubernetes-api-version.yml
 
 types:
 
-  KubernetesAPIVersion:
-    name: KubernetesAPIVersion
+  KubernetesLabel:
+    name: KubernetesLabel
     version: 1
+    extends: "#Label"
     property:
       name: string
       displayName: string

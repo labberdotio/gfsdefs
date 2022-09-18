@@ -1,0 +1,19 @@
+
+# 
+# K8s nginx compose
+# 
+
+version: '1.0'
+name: container/container-volume.yml
+
+# 
+# TYPES
+# 
+
+types:
+
+  ContainerVolume:
+    name: ContainerVolume
+    version: 1
+    property:
+      name: string

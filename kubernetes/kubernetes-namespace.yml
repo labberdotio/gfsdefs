@@ -4,7 +4,7 @@
 # 
 
 version: '1.0'
-name: kubernetes/kubernetes-api-version.yml
+name: kubernetes/kubernetes-namespace.yml
 
 # 
 # TYPES
@@ -12,9 +12,10 @@ name: kubernetes/kubernetes-api-version.yml
 
 types:
 
-  KubernetesAPIVersion:
-    name: KubernetesAPIVersion
+  KubernetesNamespace:
+    name: KubernetesNamespace
     version: 1
+    extends: "#Namespace"
     property:
       name: string
       displayName: string

@@ -1,0 +1,35 @@
+
+# 
+# K8s nginx compose
+# 
+
+version: '1.0'
+name: kubernetes/kubernetes-access-mode.yml
+
+# 
+# ENUMS
+# 
+
+# enums:
+
+#   KubernetesAccessMode:
+#     name: KubernetesAccessMode
+#     version: 1
+#     values:
+#       - ReadWriteOnce
+#       - ReadOnlyMany
+#       - ReadWriteMany
+#       - ReadWriteOncePod
+
+# 
+# TYPES
+# 
+
+types:
+
+  KubernetesAccessMode:
+    name: KubernetesAccessMode
+    version: 1
+    property:
+      name: string
+      displayName: string

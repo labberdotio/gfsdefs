@@ -4,7 +4,7 @@
 # 
 
 version: '1.0'
-name: kubernetes/kubernetes-list.yml
+name: kubernetes/kubernetes-config-map.yml
 
 # 
 # TYPES
@@ -12,9 +12,10 @@ name: kubernetes/kubernetes-list.yml
 
 types:
 
-  KubernetesList:
-    name: KubernetesList
+  KubernetesConfigMap:
+    name: KubernetesConfigMap
     version: 1
+    extends: "#Dictionary"
     property:
       name: string
       displayName: string
@@ -22,9 +23,5 @@ types:
       metadataName: string
       metadataNamespace: "#KubernetesNamespace"
       metadataApp: "#KubernetesApp"
-      deploymentItems:
-        - "#KubernetesDeployment"
-      serviceItems:
-        - "#KubernetesService"
-      ingressItems:
-        - "#KubernetesIngress"
+      entries:
+        - "#DictionaryEntry"

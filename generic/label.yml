@@ -1,0 +1,20 @@
+
+# 
+# label.yml
+# 
+
+version: '1.0'
+name: generic/label.yml
+
+# 
+# TYPES
+# 
+
+types:
+
+  Label:
+    name: Label
+    version: 1
+    property:
+      name: string
+      # displayName: string

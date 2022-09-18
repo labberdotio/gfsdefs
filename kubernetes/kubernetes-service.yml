@@ -17,7 +17,11 @@ types:
     version: 1
     property:
       name: string
+      displayName: string
       apiVersion: "#KubernetesAPIVersion"
+      metadataName: string
+      metadataNamespace: "#KubernetesNamespace"
+      metadataApp: "#KubernetesApp"
       spec: "#KubernetesServiceSpec"
 
   KubernetesServiceSpec:
@@ -28,6 +32,9 @@ types:
       app: "#KubernetesApp"
       ports:
         - "#KubernetesServicePort"
+      matchApp: "#KubernetesApp"
+      matchLabels:
+        - "#KubernetesLabel"
 
   KubernetesServicePort:
     name: KubernetesServicePort

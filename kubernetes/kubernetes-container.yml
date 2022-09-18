@@ -4,7 +4,7 @@
 # 
 
 version: '1.0'
-name: container/container.yml
+name: kubernetes/kubernetes-container.yml
 
 # 
 # TYPES
@@ -12,8 +12,8 @@ name: container/container.yml
 
 types:
 
-  Container:
-    name: Container
+  KubernetesContainer:
+    name: KubernetesContainer
     version: 1
     property:
       name: string
@@ -21,4 +21,4 @@ types:
       ports:
         - "#ContainerPort"
       volumes:
-        - "#ContainerVolume"
+        - "#KubernetesVolume"
