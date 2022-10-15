@@ -1,0 +1,18 @@
+
+# 
+# template.yml
+# 
+
+version: '1.0'
+name: gfs/template.yml
+types:
+
+  Template:
+    name: Template
+    version: 1
+    property:
+      template: string
+      format: string
+    required:
+      - template
+      - format

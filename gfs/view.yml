@@ -1,0 +1,18 @@
+
+# 
+# view.yml
+# 
+
+version: '1.0'
+name: gfs/view.yml
+types:
+
+  View:
+    name: View
+    version: 1
+    property:
+      query: "#Query"
+      template: "#Template"
+    required:
+      - query
+      - template

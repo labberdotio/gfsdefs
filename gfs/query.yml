@@ -1,0 +1,16 @@
+
+# 
+# query.yml
+# 
+
+version: '1.0'
+name: gfs/query.yml
+types:
+
+  Query:
+    name: Query
+    version: 1
+    property:
+      query: string
+    required:
+      - query
