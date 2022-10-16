@@ -11,8 +11,11 @@ types:
     name: View
     version: 1
     property:
+      name: string
+      mime: string
       query: "#Query"
       template: "#Template"
     required:
+      - name
       - query
       - template

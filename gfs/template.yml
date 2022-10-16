@@ -11,8 +11,11 @@ types:
     name: Template
     version: 1
     property:
+      name: string
       template: string
       format: string
+      mime: string
     required:
+      - name
       - template
       - format

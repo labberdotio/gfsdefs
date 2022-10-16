@@ -11,6 +11,8 @@ types:
     name: Query
     version: 1
     property:
+      name: string
       query: string
     required:
+      - name
       - query
