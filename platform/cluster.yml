@@ -1,0 +1,24 @@
+
+# 
+# cluster.yml
+# 
+
+version: '1.0'
+name: platform/cluster.yml
+
+# 
+# TYPES
+# 
+
+types:
+
+  Cluster:
+    name: Cluster
+    version: 1
+    property:
+      name: string
+      displayName: string
+      serverProtocol: string
+      serverAddress: "#Ip"
+      serverPort: "#Port"
+      certificateAuthority: "#Certificate"

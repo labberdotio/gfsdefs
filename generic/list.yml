@@ -1,0 +1,28 @@
+
+# 
+# list.yml
+# 
+
+version: '1.0'
+name: generic/list.yml
+
+# 
+# TYPES
+# 
+
+types:
+
+  List:
+    name: List
+    version: 1
+    property:
+      name: string
+      # displayName: string
+      items:
+        - "#ListItem"
+
+  ListItem:
+    name: ListItem
+    version: 1
+    property:
+      name: string

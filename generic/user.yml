@@ -1,0 +1,22 @@
+
+# 
+# user.yml
+# 
+
+version: '1.0'
+name: generic/user.yml
+
+# 
+# TYPES
+# 
+
+types:
+
+  User:
+    name: User
+    version: 1
+    property:
+      name: string
+      displayName: string
+      clientCertificate: "#Certificate"
+      clientKey: "#PrivateKey"
