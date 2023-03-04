@@ -18,7 +18,6 @@ types:
   #   extends: "#Label"
   #   property:
   #     name: string
-  #     displayName: string
 
   KubernetesAppLabel:
     name: KubernetesAppLabel
@@ -27,7 +26,6 @@ types:
     extends: "#Label"
     property:
       name: string
-      displayName: string
 
   KubernetesEnvironmentLabel:
     name: KubernetesEnvironmentLabel
@@ -36,7 +34,6 @@ types:
     extends: "#Label"
     property:
       name: string
-      displayName: string
 
   KubernetesReleaseLabel:
     name: KubernetesReleaseLabel
@@ -45,7 +42,6 @@ types:
     extends: "#Label"
     property:
       name: string
-      displayName: string
 
   KubernetesRoleLabel:
     name: KubernetesRoleLabel
@@ -54,7 +50,6 @@ types:
     extends: "#Label"
     property:
       name: string
-      displayName: string
 
   # KubernetesLabelSelector:
   #   name: KubernetesLabelSelector
@@ -62,5 +57,4 @@ types:
   #   extends: "#LabelSelector"
   #   property:
   #     name: string
-  #     displayName: string
   #     label: "#Label"

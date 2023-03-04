@@ -18,7 +18,6 @@ types:
     extends: "#Dictionary"
     property:
       name: string
-      displayName: string
       apiVersion: "#KubernetesAPIVersion"
       # metadataName: string
       # metadataNamespace: "#KubernetesNamespace"

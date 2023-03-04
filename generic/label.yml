@@ -17,12 +17,10 @@ types:
     version: 1
     property:
       name: string
-      # displayName: string
 
   LabelSelector:
     name: LabelSelector
     version: 1
     property:
       name: string
-      # displayName: string
       label: "#Label"

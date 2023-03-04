@@ -18,6 +18,5 @@ types:
     extends: "#ContainerVolume"
     property:
       name: string
-      displayName: string
       mountPath: string
       persistentVolumeClaim: "#KubernetesPersistentVolumeClaim"
