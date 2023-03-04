@@ -17,19 +17,12 @@ types:
     version: 1
     property:
       name: string
-      displayName: string
-      apiVersion: "#KubernetesAPIVersion"
-      # metadataName: string
-      # metadataNamespace: "#KubernetesNamespace"
-      # metadataApp: "#KubernetesApp"
-      # metadataAppLabel: "#KubernetesAppLabel"
-      # metadataEnvironmentLabel: "#KubernetesEnvironmentLabel"
-      # metadataReleaseLabel: "#KubernetesReleaseLabel"
-      # metadataRoleLabel: "#KubernetesRoleLabel"
-      metadata: "#KubernetesMetadata"
-      deploymentItems:
-        - "#KubernetesDeployment"
-      serviceItems:
-        - "#KubernetesService"
-      ingressItems:
-        - "#KubernetesIngress"
+      # displayName: string
+      items:
+        - "#KubernetesListItem"
+
+  KubernetesListItem:
+    name: KubernetesListItem
+    version: 1
+    property:
+      name: string
