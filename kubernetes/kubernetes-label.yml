@@ -12,18 +12,19 @@ name: kubernetes/kubernetes-label.yml
 
 types:
 
-  KubernetesLabel:
-    name: KubernetesLabel
-    version: 1
-    extends: "#Label"
-    property:
-      name: string
-      displayName: string
+  # KubernetesLabel:
+  #   name: KubernetesLabel
+  #   version: 1
+  #   extends: "#Label"
+  #   property:
+  #     name: string
+  #     displayName: string
 
   KubernetesAppLabel:
     name: KubernetesAppLabel
     version: 1
-    extends: "#KubernetesLabel"
+    # extends: "#KubernetesLabel"
+    extends: "#Label"
     property:
       name: string
       displayName: string
@@ -31,7 +32,8 @@ types:
   KubernetesEnvironmentLabel:
     name: KubernetesEnvironmentLabel
     version: 1
-    extends: "#KubernetesLabel"
+    # extends: "#KubernetesLabel"
+    extends: "#Label"
     property:
       name: string
       displayName: string
@@ -39,7 +41,8 @@ types:
   KubernetesReleaseLabel:
     name: KubernetesReleaseLabel
     version: 1
-    extends: "#KubernetesLabel"
+    # extends: "#KubernetesLabel"
+    extends: "#Label"
     property:
       name: string
       displayName: string
@@ -47,15 +50,17 @@ types:
   KubernetesRoleLabel:
     name: KubernetesRoleLabel
     version: 1
-    extends: "#KubernetesLabel"
+    # extends: "#KubernetesLabel"
+    extends: "#Label"
     property:
       name: string
       displayName: string
 
-  KubernetesLabelSelector:
-    name: KubernetesLabelSelector
-    version: 1
-    property:
-      name: string
-      displayName: string
-      label: "#KubernetesLabel"
+  # KubernetesLabelSelector:
+  #   name: KubernetesLabelSelector
+  #   version: 1
+  #   extends: "#LabelSelector"
+  #   property:
+  #     name: string
+  #     displayName: string
+  #     label: "#Label"

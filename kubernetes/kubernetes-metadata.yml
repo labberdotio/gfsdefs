@@ -27,4 +27,4 @@ types:
       # labels: 
       #   - "#KubernetesLabel"
       labels: 
-        - "#KubernetesLabelSelector"
+        - "#LabelSelector"

@@ -21,6 +21,6 @@ types:
       # matchApp: "#KubernetesApp"
       # matchLabels:
       #   - "#KubernetesLabel"
-      selector: "#KubernetesLabelSelector"
+      selector: "#LabelSelector"
       selectors:
-        - "#KubernetesLabelSelector"
+        - "#LabelSelector"
