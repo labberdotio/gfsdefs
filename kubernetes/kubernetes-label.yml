@@ -19,3 +19,43 @@ types:
     property:
       name: string
       displayName: string
+
+  KubernetesAppLabel:
+    name: KubernetesAppLabel
+    version: 1
+    extends: "#KubernetesLabel"
+    property:
+      name: string
+      displayName: string
+
+  KubernetesEnvironmentLabel:
+    name: KubernetesEnvironmentLabel
+    version: 1
+    extends: "#KubernetesLabel"
+    property:
+      name: string
+      displayName: string
+
+  KubernetesReleaseLabel:
+    name: KubernetesReleaseLabel
+    version: 1
+    extends: "#KubernetesLabel"
+    property:
+      name: string
+      displayName: string
+
+  KubernetesRoleLabel:
+    name: KubernetesRoleLabel
+    version: 1
+    extends: "#KubernetesLabel"
+    property:
+      name: string
+      displayName: string
+
+  KubernetesLabelSelector:
+    name: KubernetesLabelSelector
+    version: 1
+    property:
+      name: string
+      displayName: string
+      label: "#KubernetesLabel"

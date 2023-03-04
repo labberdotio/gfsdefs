@@ -19,22 +19,28 @@ types:
       name: string
       displayName: string
       apiVersion: "#KubernetesAPIVersion"
-      metadataName: string
-      metadataNamespace: "#KubernetesNamespace"
-      metadataApp: "#KubernetesApp"
+      # metadataName: string
+      # metadataNamespace: "#KubernetesNamespace"
+      # metadataApp: "#KubernetesApp"
+      # metadataAppLabel: "#KubernetesAppLabel"
+      # metadataEnvironmentLabel: "#KubernetesEnvironmentLabel"
+      # metadataReleaseLabel: "#KubernetesReleaseLabel"
+      # metadataRoleLabel: "#KubernetesRoleLabel"
+      metadata: "#KubernetesMetadata"
       spec: "#KubernetesDeploymentSpec"
 
   KubernetesDeploymentSpec:
     name: KubernetesDeploymentSpec
     version: 1
+    extends: "#KubernetesSpec"
     property:
       name: string
-      app: "#KubernetesApp"
+      # app: "#KubernetesApp"
       replicas: string
       containers:
         - "#Container"
       volumes:
         - "#KubernetesVolume"
-      matchApp: "#KubernetesApp"
-      matchLabels:
-        - "#KubernetesLabel"
+      # matchApp: "#KubernetesApp"
+      # matchLabels:
+      #   - "#KubernetesLabel"

@@ -1,19 +1,30 @@
 
-# # 
-# # K8s nginx compose
-# # 
+# 
+# K8s nginx compose
+# 
 
-# version: '1.0'
-# name: kubernetes/kubernetes-metadata.yml
+version: '1.0'
+name: kubernetes/kubernetes-metadata.yml
 
-# # 
-# # TYPES
-# # 
+# 
+# TYPES
+# 
 
-# types:
+types:
 
-#   KubernetesMetadata:
-#     name: KubernetesMetadata
-#     version: 1
-#     property:
-#       name: string
+  KubernetesMetadata:
+    name: KubernetesMetadata
+    version: 1
+    property:
+      name: string
+      displayName: string
+      namespace: "#KubernetesNamespace"
+      app: "#KubernetesApp"
+      appLabel: "#KubernetesAppLabel"
+      environmentLabel: "#KubernetesEnvironmentLabel"
+      releaseLabel: "#KubernetesReleaseLabel"
+      roleLabel: "#KubernetesRoleLabel"
+      # labels: 
+      #   - "#KubernetesLabel"
+      labels: 
+        - "#KubernetesLabelSelector"

@@ -20,8 +20,13 @@ types:
       name: string
       displayName: string
       apiVersion: "#KubernetesAPIVersion"
-      metadataName: string
-      metadataNamespace: "#KubernetesNamespace"
-      metadataApp: "#KubernetesApp"
+      # metadataName: string
+      # metadataNamespace: "#KubernetesNamespace"
+      # metadataApp: "#KubernetesApp"
+      # metadataAppLabel: "#KubernetesAppLabel"
+      # metadataEnvironmentLabel: "#KubernetesEnvironmentLabel"
+      # metadataReleaseLabel: "#KubernetesReleaseLabel"
+      # metadataRoleLabel: "#KubernetesRoleLabel"
+      metadata: "#KubernetesMetadata"
       entries:
         - "#DictionaryEntry"

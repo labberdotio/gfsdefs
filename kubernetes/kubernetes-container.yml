@@ -17,6 +17,7 @@ types:
     version: 1
     property:
       name: string
+      displayName: string
       image: "#ContainerImage"
       ports:
         - "#ContainerPort"
