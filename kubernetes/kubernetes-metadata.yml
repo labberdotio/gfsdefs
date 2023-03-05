@@ -18,7 +18,7 @@ types:
     property:
       name: string
       namespace: "#KubernetesNamespace"
-      app: "#KubernetesApp"
+      # app: "#KubernetesApp"
       appLabel: "#KubernetesAppLabel"
       environmentLabel: "#KubernetesEnvironmentLabel"
       releaseLabel: "#KubernetesReleaseLabel"
