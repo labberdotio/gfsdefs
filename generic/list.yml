@@ -1,10 +1,10 @@
 
 # 
-# label.yml
+# list.yml
 # 
 
 version: '1.0'
-name: generic/label.yml
+name: generic/list.yml
 
 # 
 # TYPES
@@ -12,15 +12,16 @@ name: generic/label.yml
 
 types:
 
-  Label:
-    name: Label
+  List:
+    name: List
     version: 1
     property:
       name: string
+      items:
+        - "#ListItem"
 
-  LabelSelector:
-    name: LabelSelector
+  ListItem:
+    name: ListItem
     version: 1
     property:
       name: string
-      label: "#Label"

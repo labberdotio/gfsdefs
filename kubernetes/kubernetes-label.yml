@@ -12,10 +12,49 @@ name: kubernetes/kubernetes-label.yml
 
 types:
 
-  KubernetesLabel:
-    name: KubernetesLabel
+  # KubernetesLabel:
+  #   name: KubernetesLabel
+  #   version: 1
+  #   extends: "#Label"
+  #   property:
+  #     name: string
+
+  KubernetesAppLabel:
+    name: KubernetesAppLabel
     version: 1
+    # extends: "#KubernetesLabel"
     extends: "#Label"
     property:
       name: string
-      displayName: string
+
+  KubernetesEnvironmentLabel:
+    name: KubernetesEnvironmentLabel
+    version: 1
+    # extends: "#KubernetesLabel"
+    extends: "#Label"
+    property:
+      name: string
+
+  KubernetesReleaseLabel:
+    name: KubernetesReleaseLabel
+    version: 1
+    # extends: "#KubernetesLabel"
+    extends: "#Label"
+    property:
+      name: string
+
+  KubernetesRoleLabel:
+    name: KubernetesRoleLabel
+    version: 1
+    # extends: "#KubernetesLabel"
+    extends: "#Label"
+    property:
+      name: string
+
+  # KubernetesLabelSelector:
+  #   name: KubernetesLabelSelector
+  #   version: 1
+  #   extends: "#LabelSelector"
+  #   property:
+  #     name: string
+  #     label: "#Label"

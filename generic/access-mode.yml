@@ -1,10 +1,10 @@
 
 # 
-# K8s nginx compose
+# access-mode.yml
 # 
 
 version: '1.0'
-name: kubernetes/kubernetes-access-mode.yml
+name: generic/access-mode.yml
 
 # 
 # ENUMS
@@ -12,8 +12,8 @@ name: kubernetes/kubernetes-access-mode.yml
 
 # enums:
 
-#   KubernetesAccessMode:
-#     name: KubernetesAccessMode
+#   AccessMode:
+#     name: AccessMode
 #     version: 1
 #     values:
 #       - ReadWriteOnce
@@ -27,8 +27,8 @@ name: kubernetes/kubernetes-access-mode.yml
 
 types:
 
-  KubernetesAccessMode:
-    name: KubernetesAccessMode
+  AccessMode:
+    name: AccessMode
     version: 1
     property:
       name: string

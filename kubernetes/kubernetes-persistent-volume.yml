@@ -17,22 +17,27 @@ types:
     version: 1
     property:
       name: string
-      displayName: string
       apiVersion: "#KubernetesAPIVersion"
-      metadataName: string
-      metadataNamespace: "#KubernetesNamespace"
-      metadataApp: "#KubernetesApp"
+      # metadataName: string
+      # metadataNamespace: "#KubernetesNamespace"
+      # metadataApp: "#KubernetesApp"
+      # metadataAppLabel: "#KubernetesAppLabel"
+      # metadataEnvironmentLabel: "#KubernetesEnvironmentLabel"
+      # metadataReleaseLabel: "#KubernetesReleaseLabel"
+      # metadataRoleLabel: "#KubernetesRoleLabel"
+      metadata: "#KubernetesMetadata"
       spec: "#KubernetesPersistentVolumeClaimSpec"
 
   KubernetesPersistentVolumeClaimSpec:
     name: KubernetesPersistentVolumeClaimSpec
     version: 1
+    extends: "#KubernetesSpec"
     property:
       name: string
       accessModes:
         - "#KubernetesAccessMode"
       storageClass: "#KubernetesStorageClass"
       storageSize: string
-      matchApp: "#KubernetesApp"
-      matchLabels:
-        - "#KubernetesLabel"
+      # matchApp: "#KubernetesApp"
+      # matchLabels:
+      #   - "#KubernetesLabel"

@@ -17,3 +17,12 @@ types:
     version: 1
     property:
       name: string
+      mountPath: string
+      claim: "#ContainerVolumeClaim"
+
+  ContainerVolumeClaim:
+    name: ContainerVolumeClaim
+    version: 1
+    property:
+      name: string
+      mountPath: string

@@ -1,0 +1,26 @@
+
+# 
+# K8s nginx compose
+# 
+
+version: '1.0'
+name: kubernetes/kubernetes-spec.yml
+
+# 
+# TYPES
+# 
+
+types:
+
+  KubernetesSpec:
+    name: KubernetesSpec
+    version: 1
+    property:
+      name: string
+      # app: "#KubernetesApp"
+      # matchApp: "#KubernetesApp"
+      # matchLabels:
+      #   - "#KubernetesLabel"
+      selector: "#LabelSelector"
+      selectors:
+        - "#LabelSelector"

@@ -1,10 +1,10 @@
 
 # 
-# K8s nginx compose
+# cluster.yml
 # 
 
 version: '1.0'
-name: kubernetes/kubernetes-cluster.yml
+name: platform/cluster.yml
 
 # 
 # TYPES
@@ -12,8 +12,8 @@ name: kubernetes/kubernetes-cluster.yml
 
 types:
 
-  KubernetesCluster:
-    name: KubernetesCluster
+  Cluster:
+    name: Cluster
     version: 1
     property:
       name: string

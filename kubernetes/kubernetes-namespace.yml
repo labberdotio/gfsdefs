@@ -18,4 +18,3 @@ types:
     extends: "#Namespace"
     property:
       name: string
-      displayName: string
