@@ -27,3 +27,5 @@ types:
       #   - "#KubernetesLabel"
       labels: 
         - "#LabelSelector"
+      annotations: 
+        - "#AnnotationSelector"
