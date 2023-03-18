@@ -36,10 +36,11 @@ types:
       name: string
       # app: "#KubernetesApp"
       replicas: string
-      containers:
-        - "#Container"
-      volumes:
-        - "#KubernetesVolume"
+      # containers:
+      #   - "#Container"
+      # volumes:
+      #   - "#KubernetesVolume"
       # matchApp: "#KubernetesApp"
       # matchLabels:
       #   - "#KubernetesLabel"
+      template: "#KubernetesPodTemplate"
