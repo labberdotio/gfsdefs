@@ -1,0 +1,45 @@
+
+# 
+# K8s nginx compose
+# 
+
+version: '1.0'
+name: kubernetes/kubernetes-pod-template.yml
+
+# 
+# TYPES
+# 
+
+types:
+
+  KubernetesPodTemplate:
+    name: KubernetesPodTemplate
+    version: 1
+    property:
+      name: string
+      apiVersion: "#KubernetesAPIVersion"
+      # metadataName: string
+      # metadataNamespace: "#KubernetesNamespace"
+      # metadataApp: "#KubernetesApp"
+      # metadataAppLabel: "#KubernetesAppLabel"
+      # metadataEnvironmentLabel: "#KubernetesEnvironmentLabel"
+      # metadataReleaseLabel: "#KubernetesReleaseLabel"
+      # metadataRoleLabel: "#KubernetesRoleLabel"
+      metadata: "#KubernetesMetadata"
+      spec: "#KubernetesPodTemplateSpec"
+
+  KubernetesPodTemplateSpec:
+    name: KubernetesPodTemplateSpec
+    version: 1
+    extends: "#KubernetesSpec"
+    property:
+      name: string
+      # app: "#KubernetesApp"
+      replicas: string
+      containers:
+        - "#Container"
+      volumes:
+        - "#KubernetesVolume"
+      # matchApp: "#KubernetesApp"
+      # matchLabels:
+      #   - "#KubernetesLabel"
