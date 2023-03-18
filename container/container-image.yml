@@ -17,5 +17,8 @@ types:
     version: 1
     property:
       name: string
-      imageName: string
-      imageVersion: string
+      # imageName: string
+      # imageVersion: string
+      # imageRegistry: "#ContainerRegistry"
+      version: string
+      registry: "#ContainerImageRegistry"
