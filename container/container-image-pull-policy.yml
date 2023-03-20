@@ -1,0 +1,19 @@
+
+# 
+# K8s nginx compose
+# 
+
+version: '1.0'
+name: container/container-image-pull-policy.yml
+
+# 
+# TYPES
+# 
+
+types:
+
+  ContainerImagePullPolicy:
+    name: ContainerImagePullPolicy
+    version: 1
+    property:
+      name: string

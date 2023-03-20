@@ -1,0 +1,20 @@
+
+# 
+# K8s nginx compose
+# 
+
+version: '1.0'
+name: container/container-image-registry.yml
+
+# 
+# TYPES
+# 
+
+types:
+
+  ContainerImageRegistry:
+    name: ContainerImageRegistry
+    version: 1
+    property:
+      name: string
+      # url: string

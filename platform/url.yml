@@ -1,0 +1,18 @@
+
+# 
+# url.yml
+# 
+
+version: '1.0'
+name: platform/url.yml
+types:
+
+  URL:
+    name: URL
+    version: 1
+    property:
+      http: string
+      name: string
+      host: string
+      port: string
+      path: string

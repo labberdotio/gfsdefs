@@ -1,0 +1,26 @@
+
+# 
+# annotation.yml
+# 
+
+version: '1.0'
+name: generic/annotation.yml
+
+# 
+# TYPES
+# 
+
+types:
+
+  Annotation:
+    name: Annotation
+    version: 1
+    property:
+      name: string
+
+  AnnotationSelector:
+    name: AnnotationSelector
+    version: 1
+    property:
+      name: string
+      annotation: "#Annotation"

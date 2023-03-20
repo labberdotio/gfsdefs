@@ -18,6 +18,10 @@ types:
     property:
       name: string
       image: "#ContainerImage"
+      imageRegistry: "#ContainerImageRegistry"
+      imagePullPolicy: "#ContainerImagePullPolicy"
+      imagePullSecrets: 
+        - "#ContainerImagePullSecret"
       ports:
         - "#ContainerPort"
       volumes:

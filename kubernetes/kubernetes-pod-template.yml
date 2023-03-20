@@ -4,7 +4,7 @@
 # 
 
 version: '1.0'
-name: kubernetes/kubernetes-deployment.yml
+name: kubernetes/kubernetes-pod-template.yml
 
 # 
 # TYPES
@@ -12,8 +12,8 @@ name: kubernetes/kubernetes-deployment.yml
 
 types:
 
-  KubernetesDeployment:
-    name: KubernetesDeployment
+  KubernetesPodTemplate:
+    name: KubernetesPodTemplate
     version: 1
     property:
       name: string
@@ -26,21 +26,20 @@ types:
       # metadataReleaseLabel: "#KubernetesReleaseLabel"
       # metadataRoleLabel: "#KubernetesRoleLabel"
       metadata: "#KubernetesMetadata"
-      spec: "#KubernetesDeploymentSpec"
+      spec: "#KubernetesPodTemplateSpec"
 
-  KubernetesDeploymentSpec:
-    name: KubernetesDeploymentSpec
+  KubernetesPodTemplateSpec:
+    name: KubernetesPodTemplateSpec
     version: 1
     extends: "#KubernetesSpec"
     property:
       name: string
       # app: "#KubernetesApp"
       replicas: string
-      # containers:
-      #   - "#Container"
-      # volumes:
-      #   - "#KubernetesVolume"
+      containers:
+        - "#Container"
+      volumes:
+        - "#KubernetesVolume"
       # matchApp: "#KubernetesApp"
       # matchLabels:
       #   - "#KubernetesLabel"
-      template: "#KubernetesPodTemplate"
