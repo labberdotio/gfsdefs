@@ -1,0 +1,20 @@
+
+# 
+# variable.yml
+# 
+
+version: '1.0'
+name: generic/variable.yml
+
+# 
+# TYPES
+# 
+
+types:
+
+  Variable:
+    name: Label
+    version: 1
+    property:
+      name: string
+      value: string

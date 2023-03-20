@@ -1,0 +1,53 @@
+
+# 
+# environment-variable.yml
+# 
+
+version: '1.0'
+name: platform/environment-variable.yml
+
+# 
+# TYPES
+# 
+
+types:
+
+  EnvironmentVariable:
+    name: EnvironmentVariable
+    version: 1
+    extends: "#Variable"
+    property:
+      name: string
+      value: string
+
+  HostEnvironmentVariable:
+    name: HostEnvironmentVariable
+    version: 1
+    extends: "#EnvironmentVariable"
+    property:
+      name: string
+      value: "#Ip"
+
+  URLEnvironmentVariable:
+    name: URLEnvironmentVariable
+    version: 1
+    extends: "#EnvironmentVariable"
+    property:
+      name: string
+      value: "#URL"
+
+  UserEnvironmentVariable:
+    name: UserEnvironmentVariable
+    version: 1
+    extends: "#EnvironmentVariable"
+    property:
+      name: string
+      value: "#User"
+
+  SecretEnvironmentVariable:
+    name: SecretEnvironmentVariable
+    version: 1
+    extends: "#EnvironmentVariable"
+    property:
+      name: string
+      value: "#Secret"
